@@ -6,16 +6,16 @@ class testSelectionSort {
     @Test
     void testPositives() {
         SelectionSort sorter = new SelectionSort();
-        int[] input = { 5, 2, 9, 1, 5 };
-        int[] expected = { 1, 2, 5, 5, 9 };
+        int[] input = { 6, 2, 9, 2, 5 };
+        int[] expected = { 2, 2, 5, 6, 9 };
         assertArrayEquals(expected, sorter.basicSelectionSort(input));
     }
 
     @Test
     void testNegatives() {
         SelectionSort sorter = new SelectionSort();
-        int[] input = { -5, -2, -9, -1, -5 };
-        int[] expected = { -9, -5, -5, -2, -1 };
+        int[] input = { -5, -3, -9, -2, -5 };
+        int[] expected = { -9, -5, -5, -3, -2 };
         assertArrayEquals(expected, sorter.basicSelectionSort(input));
     }
 
